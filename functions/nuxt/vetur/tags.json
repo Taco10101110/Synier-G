@@ -233,6 +233,36 @@
   "LazyCgoUserShopPermmit": {
     "description": "Auto imported from components/general/organisms/CgoUserShopPermmit.vue"
   },
+  "CsaBoard": {
+    "description": "Auto imported from components/shop/atoms/CsaBoard.vue"
+  },
+  "LazyCsaBoard": {
+    "description": "Auto imported from components/shop/atoms/CsaBoard.vue"
+  },
+  "CsaCreativeFill": {
+    "description": "Auto imported from components/shop/atoms/CsaCreativeFill.vue"
+  },
+  "LazyCsaCreativeFill": {
+    "description": "Auto imported from components/shop/atoms/CsaCreativeFill.vue"
+  },
+  "CsaDivisionBar": {
+    "description": "Auto imported from components/shop/atoms/CsaDivisionBar.vue"
+  },
+  "LazyCsaDivisionBar": {
+    "description": "Auto imported from components/shop/atoms/CsaDivisionBar.vue"
+  },
+  "CsaPBox": {
+    "description": "Auto imported from components/shop/atoms/CsaPBox.vue"
+  },
+  "LazyCsaPBox": {
+    "description": "Auto imported from components/shop/atoms/CsaPBox.vue"
+  },
+  "CsaTitle": {
+    "description": "Auto imported from components/shop/atoms/CsaTitle.vue"
+  },
+  "LazyCsaTitle": {
+    "description": "Auto imported from components/shop/atoms/CsaTitle.vue"
+  },
   "CsmFloatButtons": {
     "description": "Auto imported from components/shop/molecules/CsmFloatButtons.vue"
   },
@@ -274,36 +304,6 @@
   },
   "LazyCsmShopPanelSlide": {
     "description": "Auto imported from components/shop/molecules/CsmShopPanelSlide.vue"
-  },
-  "CsaBoard": {
-    "description": "Auto imported from components/shop/atoms/CsaBoard.vue"
-  },
-  "LazyCsaBoard": {
-    "description": "Auto imported from components/shop/atoms/CsaBoard.vue"
-  },
-  "CsaCreativeFill": {
-    "description": "Auto imported from components/shop/atoms/CsaCreativeFill.vue"
-  },
-  "LazyCsaCreativeFill": {
-    "description": "Auto imported from components/shop/atoms/CsaCreativeFill.vue"
-  },
-  "CsaDivisionBar": {
-    "description": "Auto imported from components/shop/atoms/CsaDivisionBar.vue"
-  },
-  "LazyCsaDivisionBar": {
-    "description": "Auto imported from components/shop/atoms/CsaDivisionBar.vue"
-  },
-  "CsaPBox": {
-    "description": "Auto imported from components/shop/atoms/CsaPBox.vue"
-  },
-  "LazyCsaPBox": {
-    "description": "Auto imported from components/shop/atoms/CsaPBox.vue"
-  },
-  "CsaTitle": {
-    "description": "Auto imported from components/shop/atoms/CsaTitle.vue"
-  },
-  "LazyCsaTitle": {
-    "description": "Auto imported from components/shop/atoms/CsaTitle.vue"
   },
   "CsoFooter": {
     "description": "Auto imported from components/shop/organisms/CsoFooter.vue"
