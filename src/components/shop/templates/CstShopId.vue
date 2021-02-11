@@ -48,6 +48,15 @@ export default {
   computed: {
     ...mapGetters('xd/shop/xdsshop', ['cShop', 'cShopStoreFronts'])
   },
+  /*
+  watch: {
+    cShop () {
+      if (this.cShop !== null) {
+        this.$store.dispatch('xd/shop/xdsshop/setCProductsBySid', this.cShop.id)
+      }
+    }
+  },
+  */
   mounted () {
     console.log('Cst shop id mounted')
     this.$store.dispatch('xd/shop/xdsshop/resetCShop')

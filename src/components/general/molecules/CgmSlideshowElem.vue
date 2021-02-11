@@ -28,15 +28,25 @@ export default {
     apdelay: {
       type: Number,
       default: 0
+    },
+    fillmode: {
+      type: String,
+      default: 'forwards'
     }
   },
   computed: {
+    ...mapGetters('xd/general/xdslideshow', ['nElem']),
     isVisible () {
-      if (this.$store.getters['xd/general/xdslideshow/nElem'] >= this.$props.enumber) {
-        return true
-      } else {
-        return false
+      if (this.$props.fillmode === 'forwards') {
+        if (this.nElem >= this.$props.enumber) {
+          return true
+        }
+      } else if (this.$props.fillmode === 'backwards') {
+        if (this.nElem === this.$props.enumber) {
+          return true
+        }
       }
+      return false
     },
     delayStyle () {
       return {
@@ -62,7 +72,7 @@ export default {
     }
   }
   &.RtoL{
-    transform: translateX(100%);
+    transform: translateX(100vw);
     &.seVis{
       transform: translateX(0);
     }

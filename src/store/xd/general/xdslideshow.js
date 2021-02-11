@@ -128,7 +128,7 @@ export const getters = {
     return state.nPanel
   },
   nElem: (state, getters, rootState, rootGetters) => {
-    // console.log('nElem ' + state.nElem)
+    console.log('nElem ' + state.nElem)
     return state.nElem
   }
 }

@@ -7,8 +7,8 @@
       :cid="storefront.creativeMaps.background"
       :stylesets="['mZoom','cGrad']"
       :settings="{
-        clGrad1: '#FF8000',
-        clGrad2: '#A0A0A0',
+        clGrad1: '#FF8000A0',
+        clGrad2: '#FF000010',
         mvZoomL: '120%',
         mvZoomS: '180%',
         bgPosXY: '70% 70%'
@@ -104,6 +104,7 @@ export default {
         mix-blend-mode: hard-light;
       }
       .spNews{
+        width: 80%;
         h3{
           width: 100%;
           text-align: center;

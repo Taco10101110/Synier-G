@@ -1,7 +1,7 @@
 <template>
-  <p>
+  <span class="CgaPrice">
     {{ priceToView() }}
-  </p>
+  </span>
 </template>
 <script>
 export default {
@@ -20,4 +20,9 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+.CgaPrice{
+  margin: 0;
+  letter-spacing: 0rem;
+  font-size:0.8em;
+}
 </style>

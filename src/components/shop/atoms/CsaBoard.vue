@@ -43,17 +43,15 @@ export default {
 </script>
 <style scoped lang="scss">
 .csaBoard{
-  --witdhper: 100%;
+  // --witdhper: 100%;
   --margin-r: 0;
   --margin-l: 0;
   padding: 1rem;
-  width: var(--witdhper);
+  // width: var(--witdhper);
   margin-left: var(--margin-l);
   margin-right: var(--margin-r);
   border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
+  @include tGlass-bg();
+  @include tShadow-z2();
 }
 </style>

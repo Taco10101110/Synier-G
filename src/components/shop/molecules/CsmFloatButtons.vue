@@ -1,6 +1,6 @@
 <template>
   <div class="CsmFbs">
-    <v-btn
+    <div
       v-for="menu in menus"
       :key="menu.key"
       class="fbsButton fbsBtn--grass"
@@ -11,9 +11,10 @@
     >
       <font-awesome-icon
         class="fbsIcon"
+        :style="{fontSize: '1.6rem'}"
         :icon="menu.icon"
       />
-    </v-btn>
+    </div>
   </div>
 </template>
 <script>
@@ -56,6 +57,12 @@ export default {
     margin-top: 1rem;
     box-shadow: 2px 2px 0px 0px  rgba(0, 0, 0, 0.3);
     font-size: 1.6rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .fbsIcon{
       font-size: 1.6rem;
       animation: neon 10s infinite both;

@@ -40,6 +40,7 @@ export default class {
               this.dispatch(`${state.sPath}/setCBrand`, snap.data().brand, { root: true })
             }
             this.dispatch(`${state.sPath}/setCreativesByShop`, snap.data(), { root: true })
+            this.dispatch(`${state.sPath}/setCProductsBySid`, sid, { root: true })
           } else {
             console.log('  XDC SHOP Set CSHOP ERROR CANT FIND' + sid)
           }
