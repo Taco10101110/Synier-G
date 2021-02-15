@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------
 ## Theme grass
 --------------------------------------------------------------*/
+@mixin tShadow-none {
+    box-shadow: none;
+}
+@mixin tShadow-z0 {
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
 @mixin tShadow-z1 {
     box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }

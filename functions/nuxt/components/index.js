@@ -23,6 +23,10 @@ export { default as CctShopIndex } from '../..\\components\\create\\templates\\C
 export { default as CgaFooterBtn } from '../..\\components\\general\\atoms\\CgaFooterBtn.vue'
 export { default as CgaFooterSheet } from '../..\\components\\general\\atoms\\CgaFooterSheet.vue'
 export { default as CgaPrice } from '../..\\components\\general\\atoms\\CgaPrice.vue'
+export { default as CgoLayoutBase } from '../..\\components\\general\\organisms\\CgoLayoutBase.vue'
+export { default as CgoUserBrandPermmit } from '../..\\components\\general\\organisms\\CgoUserBrandPermmit.vue'
+export { default as CgoUserOnly } from '../..\\components\\general\\organisms\\CgoUserOnly.vue'
+export { default as CgoUserShopPermmit } from '../..\\components\\general\\organisms\\CgoUserShopPermmit.vue'
 export { default as CgmCreativeBox } from '../..\\components\\general\\molecules\\CgmCreativeBox.vue'
 export { default as CgmFloatActMenu } from '../..\\components\\general\\molecules\\CgmFloatActMenu.vue'
 export { default as CgmFooterBase } from '../..\\components\\general\\molecules\\CgmFooterBase.vue'
@@ -33,10 +37,6 @@ export { default as CgmOkCancelDialog } from '../..\\components\\general\\molecu
 export { default as CgmSlideshowBase } from '../..\\components\\general\\molecules\\CgmSlideshowBase.vue'
 export { default as CgmSlideshowElem } from '../..\\components\\general\\molecules\\CgmSlideshowElem.vue'
 export { default as CgmSlideshowPanel } from '../..\\components\\general\\molecules\\CgmSlideshowPanel.vue'
-export { default as CgoLayoutBase } from '../..\\components\\general\\organisms\\CgoLayoutBase.vue'
-export { default as CgoUserBrandPermmit } from '../..\\components\\general\\organisms\\CgoUserBrandPermmit.vue'
-export { default as CgoUserOnly } from '../..\\components\\general\\organisms\\CgoUserOnly.vue'
-export { default as CgoUserShopPermmit } from '../..\\components\\general\\organisms\\CgoUserShopPermmit.vue'
 export { default as CsaBoard } from '../..\\components\\shop\\atoms\\CsaBoard.vue'
 export { default as CsaCreativeFill } from '../..\\components\\shop\\atoms\\CsaCreativeFill.vue'
 export { default as CsaDivisionBar } from '../..\\components\\shop\\atoms\\CsaDivisionBar.vue'
@@ -84,6 +84,10 @@ export const LazyCctShopIndex = import('../..\\components\\create\\templates\\Cc
 export const LazyCgaFooterBtn = import('../..\\components\\general\\atoms\\CgaFooterBtn.vue' /* webpackChunkName: "components_general/atoms/CgaFooterBtn" */).then(c => c.default || c)
 export const LazyCgaFooterSheet = import('../..\\components\\general\\atoms\\CgaFooterSheet.vue' /* webpackChunkName: "components_general/atoms/CgaFooterSheet" */).then(c => c.default || c)
 export const LazyCgaPrice = import('../..\\components\\general\\atoms\\CgaPrice.vue' /* webpackChunkName: "components_general/atoms/CgaPrice" */).then(c => c.default || c)
+export const LazyCgoLayoutBase = import('../..\\components\\general\\organisms\\CgoLayoutBase.vue' /* webpackChunkName: "components_general/organisms/CgoLayoutBase" */).then(c => c.default || c)
+export const LazyCgoUserBrandPermmit = import('../..\\components\\general\\organisms\\CgoUserBrandPermmit.vue' /* webpackChunkName: "components_general/organisms/CgoUserBrandPermmit" */).then(c => c.default || c)
+export const LazyCgoUserOnly = import('../..\\components\\general\\organisms\\CgoUserOnly.vue' /* webpackChunkName: "components_general/organisms/CgoUserOnly" */).then(c => c.default || c)
+export const LazyCgoUserShopPermmit = import('../..\\components\\general\\organisms\\CgoUserShopPermmit.vue' /* webpackChunkName: "components_general/organisms/CgoUserShopPermmit" */).then(c => c.default || c)
 export const LazyCgmCreativeBox = import('../..\\components\\general\\molecules\\CgmCreativeBox.vue' /* webpackChunkName: "components_general/molecules/CgmCreativeBox" */).then(c => c.default || c)
 export const LazyCgmFloatActMenu = import('../..\\components\\general\\molecules\\CgmFloatActMenu.vue' /* webpackChunkName: "components_general/molecules/CgmFloatActMenu" */).then(c => c.default || c)
 export const LazyCgmFooterBase = import('../..\\components\\general\\molecules\\CgmFooterBase.vue' /* webpackChunkName: "components_general/molecules/CgmFooterBase" */).then(c => c.default || c)
@@ -94,10 +98,6 @@ export const LazyCgmOkCancelDialog = import('../..\\components\\general\\molecul
 export const LazyCgmSlideshowBase = import('../..\\components\\general\\molecules\\CgmSlideshowBase.vue' /* webpackChunkName: "components_general/molecules/CgmSlideshowBase" */).then(c => c.default || c)
 export const LazyCgmSlideshowElem = import('../..\\components\\general\\molecules\\CgmSlideshowElem.vue' /* webpackChunkName: "components_general/molecules/CgmSlideshowElem" */).then(c => c.default || c)
 export const LazyCgmSlideshowPanel = import('../..\\components\\general\\molecules\\CgmSlideshowPanel.vue' /* webpackChunkName: "components_general/molecules/CgmSlideshowPanel" */).then(c => c.default || c)
-export const LazyCgoLayoutBase = import('../..\\components\\general\\organisms\\CgoLayoutBase.vue' /* webpackChunkName: "components_general/organisms/CgoLayoutBase" */).then(c => c.default || c)
-export const LazyCgoUserBrandPermmit = import('../..\\components\\general\\organisms\\CgoUserBrandPermmit.vue' /* webpackChunkName: "components_general/organisms/CgoUserBrandPermmit" */).then(c => c.default || c)
-export const LazyCgoUserOnly = import('../..\\components\\general\\organisms\\CgoUserOnly.vue' /* webpackChunkName: "components_general/organisms/CgoUserOnly" */).then(c => c.default || c)
-export const LazyCgoUserShopPermmit = import('../..\\components\\general\\organisms\\CgoUserShopPermmit.vue' /* webpackChunkName: "components_general/organisms/CgoUserShopPermmit" */).then(c => c.default || c)
 export const LazyCsaBoard = import('../..\\components\\shop\\atoms\\CsaBoard.vue' /* webpackChunkName: "components_shop/atoms/CsaBoard" */).then(c => c.default || c)
 export const LazyCsaCreativeFill = import('../..\\components\\shop\\atoms\\CsaCreativeFill.vue' /* webpackChunkName: "components_shop/atoms/CsaCreativeFill" */).then(c => c.default || c)
 export const LazyCsaDivisionBar = import('../..\\components\\shop\\atoms\\CsaDivisionBar.vue' /* webpackChunkName: "components_shop/atoms/CsaDivisionBar" */).then(c => c.default || c)

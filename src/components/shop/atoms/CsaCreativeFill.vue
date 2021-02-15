@@ -1,6 +1,5 @@
 <template>
   <div
-    v-if="cid !== ''"
     :ref="'divArea'"
     :class="classes"
     :style="styles"

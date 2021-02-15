@@ -1,5 +1,8 @@
 <template>
-  <h2 class="csaTitle">
+  <h2
+    class="csaTitle"
+    :style="Styles"
+  >
     <slot />
   </h2>
 </template>
@@ -7,11 +10,20 @@
 export default {
   name: 'CsaTitle',
   props: {
+    fontsize: {
+      type: Number,
+      default: 3.2
+    }
   },
   data: () => ({
     cvs: null
   }),
   computed: {
+    Styles () {
+      return {
+        '--fsize': `${this.$props.fontsize}rem`
+      }
+    }
   },
   mounted () {
   },
@@ -21,7 +33,8 @@ export default {
 </script>
 <style scoped lang="scss">
 .csaTitle {
-  font-size: 3.2rem;
+  --fsize: 3.2rem;
+  font-size: var(--fsize);
   word-break: keep-all;
   font-family: "M PLUS 1p";
   font-weight: 100;

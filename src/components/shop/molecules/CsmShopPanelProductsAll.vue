@@ -4,31 +4,48 @@
     :pagenumber="pagenumber"
     class="cspProductsAll"
   >
-    <CsaTitle>All Products</CsaTitle>
-    <div
-      v-for="(pList, lIndex) in cProductsLists"
-      :key="lIndex"
-      class="paContainer"
+    <CsaCreativeFill
+      :v-if="storefront.creativeMaps.background"
+      :cid="storefront.creativeMaps.background"
+      :stylesets="['mZoom','cGrad']"
+      :settings="{
+        clGrad1: '#FF8000A0',
+        clGrad2: '#FF000010',
+        mvZoomL: '100%',
+        mvZoomS: '200%',
+        bgPosXY: '50% 50%'
+      }"
+      class="paBg"
     >
-      <CsaPBox
-        v-for="(p, pIndex) in pList"
-        :key="p.id"
-        :v-show="nElem === (lIndex + 1)"
-        :product="p"
-        :enumber="lIndex + 1"
-        :apdelay="pIndex * 2"
-        :class="[
-          'paProduct',
-          `pa--${pIndex}`,
-          nElem === (lIndex + 1) ? 'paVis' : 'paInv'
-        ]"
-      />
-    </div>
+      <CsaTitle class="paTitle" :fontsize="2.2">
+        All Products
+      </CsaTitle>
+      <div
+        v-for="(pList, lIndex) in cProductsLists"
+        :key="lIndex"
+        class="paContainer"
+      >
+        <CsaPBox
+          v-for="(p, pIndex) in pList"
+          :key="p.id"
+          :v-show="nElem === (lIndex + 1)"
+          :product="p"
+          :enumber="lIndex + 1"
+          :apdelay="pIndex * 2"
+          :class="[
+            'paProduct',
+            `pa--${pIndex}`,
+            nElem === (lIndex + 1) ? 'paVis' : 'paInv'
+          ]"
+        />
+      </div>
+    </CsaCreativeFill>
   </CgmSlideshowPanel>
 </template>
 <script>
 import CgmSlideshowPanel from '@/components/general/molecules/CgmSlideshowPanel.vue'
 import CsaTitle from '@/components/shop/atoms/CsaTitle.vue'
+import CsaCreativeFill from '@/components/shop/atoms/CsaCreativeFill.vue'
 import CsaPBox from '@/components/shop/atoms/CsaPBox.vue'
 const { mapGetters } = require('vuex')
 const cfShops = require('~/classes/cfShops.js')
@@ -36,6 +53,7 @@ export default {
   name: 'CsmShopPanelProductsAll',
   components: {
     CgmSlideshowPanel,
+    CsaCreativeFill,
     CsaTitle,
     CsaPBox
   },
@@ -107,27 +125,47 @@ export default {
 </script>
 <style scoped lang="scss">
 .cspProductsAll{
-  padding: 60px 1rem 1rem 1rem;
-  .paContainer{
-    display: flex;
-    flex-wrap: wrap;
-    .paProduct{
-      width: 50%;
+  .paBg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 60px 1rem 1rem 1rem;
+    .paTitle{
+      margin: 0.5rem 0;
+      mix-blend-mode: hard-light;
     }
-    .paProduct.paInv{
-      transition: 0.2s;
-      animation-delay: 0;
-      height: 0;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      * {
+    .paContainer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .paProduct{
+        width: 49%;
+      }
+      .paProduct.paVis{
+        transition: 0.2s;
+        animation-delay: 0.1s;
+      }
+      .paProduct.paInv{
+        transition: 0.1s;
+        animation-delay: 0;
+        height: 0;
         margin: 0;
         padding: 0;
-        line-height: 0;
-        height: 0;
-        display: inline-block;
         overflow: hidden;
+        border: none;
+        @include tShadow-none();
+        * {
+          margin: 0;
+          padding: 0;
+          line-height: 0;
+          height: 0;
+          display: inline-block;
+          overflow: hidden;
+        }
       }
     }
   }

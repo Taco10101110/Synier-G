@@ -149,6 +149,30 @@
   "LazyCgaPrice": {
     "description": "Auto imported from components/general/atoms/CgaPrice.vue"
   },
+  "CgoLayoutBase": {
+    "description": "Auto imported from components/general/organisms/CgoLayoutBase.vue"
+  },
+  "LazyCgoLayoutBase": {
+    "description": "Auto imported from components/general/organisms/CgoLayoutBase.vue"
+  },
+  "CgoUserBrandPermmit": {
+    "description": "Auto imported from components/general/organisms/CgoUserBrandPermmit.vue"
+  },
+  "LazyCgoUserBrandPermmit": {
+    "description": "Auto imported from components/general/organisms/CgoUserBrandPermmit.vue"
+  },
+  "CgoUserOnly": {
+    "description": "Auto imported from components/general/organisms/CgoUserOnly.vue"
+  },
+  "LazyCgoUserOnly": {
+    "description": "Auto imported from components/general/organisms/CgoUserOnly.vue"
+  },
+  "CgoUserShopPermmit": {
+    "description": "Auto imported from components/general/organisms/CgoUserShopPermmit.vue"
+  },
+  "LazyCgoUserShopPermmit": {
+    "description": "Auto imported from components/general/organisms/CgoUserShopPermmit.vue"
+  },
   "CgmCreativeBox": {
     "description": "Auto imported from components/general/molecules/CgmCreativeBox.vue"
   },
@@ -208,30 +232,6 @@
   },
   "LazyCgmSlideshowPanel": {
     "description": "Auto imported from components/general/molecules/CgmSlideshowPanel.vue"
-  },
-  "CgoLayoutBase": {
-    "description": "Auto imported from components/general/organisms/CgoLayoutBase.vue"
-  },
-  "LazyCgoLayoutBase": {
-    "description": "Auto imported from components/general/organisms/CgoLayoutBase.vue"
-  },
-  "CgoUserBrandPermmit": {
-    "description": "Auto imported from components/general/organisms/CgoUserBrandPermmit.vue"
-  },
-  "LazyCgoUserBrandPermmit": {
-    "description": "Auto imported from components/general/organisms/CgoUserBrandPermmit.vue"
-  },
-  "CgoUserOnly": {
-    "description": "Auto imported from components/general/organisms/CgoUserOnly.vue"
-  },
-  "LazyCgoUserOnly": {
-    "description": "Auto imported from components/general/organisms/CgoUserOnly.vue"
-  },
-  "CgoUserShopPermmit": {
-    "description": "Auto imported from components/general/organisms/CgoUserShopPermmit.vue"
-  },
-  "LazyCgoUserShopPermmit": {
-    "description": "Auto imported from components/general/organisms/CgoUserShopPermmit.vue"
   },
   "CsaBoard": {
     "description": "Auto imported from components/shop/atoms/CsaBoard.vue"

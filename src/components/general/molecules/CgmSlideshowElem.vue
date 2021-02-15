@@ -71,6 +71,12 @@ export default {
       transform: translateY(0);
     }
   }
+  &.JustFade{
+    opacity: 0;
+    &.seVis{
+      opacity: 1;
+    }
+  }
   &.RtoL{
     transform: translateX(100vw);
     &.seVis{

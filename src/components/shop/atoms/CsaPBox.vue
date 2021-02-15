@@ -5,9 +5,16 @@
         {{ product.name }}
       </h3>
     </CgmSlideshowElem>
-    <CgmSlideshowElem :fillmode="'backwards'" :enumber="enumber" :apdelay="apdelay">
+    <CgmSlideshowElem :fillmode="'backwards'" :enumber="enumber" :apdelay="apdelay" :apstyle="'JustFade'">
+      <!--
       <CgmCreativeBox
         :src="cCrePath(product.topimage)"
+      />
+      -->
+      <v-img
+        :src="cCrePath(product.topimage)"
+        aspect-ratio="1"
+        class="pbImage"
       />
     </CgmSlideshowElem>
     <CgmSlideshowElem :fillmode="'backwards'" :enumber="enumber" :apdelay="apdelay+2" :apstyle="'RtoL'">
@@ -17,14 +24,14 @@
 </template>
 <script>
 import CgmSlideshowElem from '@/components/general/molecules/CgmSlideshowElem.vue'
-import CgmCreativeBox from '@/components/general/molecules/CgmCreativeBox.vue'
+// import CgmCreativeBox from '@/components/general/molecules/CgmCreativeBox.vue'
 import CgaPrice from '@/components/general/atoms/CgaPrice.vue'
 const { mapGetters } = require('vuex')
 export default {
   name: 'CsaPBox',
   components: {
     CgmSlideshowElem,
-    CgmCreativeBox,
+    // CgmCreativeBox,
     CgaPrice
   },
   props: {
@@ -59,11 +66,16 @@ export default {
 </script>
 <style scoped lang="scss">
 .pBox {
-  padding: 0.2rem;
-  margin-bottom: 1rem;
+  // padding: 0.2rem;
+  //margin-bottom: 1rem;
+  // background-color: yellow;
+  margin: 0.5rem 0;
+  border-radius: 3px;
+  @include tGlass-bg();
+  @include tShadow-z2();
   .pbPrice, .pbTitle{
-    @include tGlass-bg();
-    @include tShadow-z1();
+    // @include tGlass-bg();
+    // @include tShadow-z1();
     border-radius: 2px;
     font-size: 0.8rem;
     text-align: center;
@@ -81,6 +93,9 @@ export default {
     align-items: center;
     justify-content: center;
     line-height: 1.1rem;
+  }
+  .pbImage{
+    filter: chroma(#fff);
   }
   .pbPrice{
     display: block;
