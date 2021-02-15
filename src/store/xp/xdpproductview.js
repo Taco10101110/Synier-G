@@ -6,7 +6,8 @@ let dXdpProduct = []
 export default class {
   constructor () {
     this.state = {
-      cProducts: []
+      cProducts: {},
+      viewPid: 0
     }
 
     this.mutations = {
@@ -14,7 +15,7 @@ export default class {
         state.cProducts = cProducts
       },
       resetCProducts (state) {
-        state.cProducts = []
+        state.cProducts = {}
       },
       pushCProducts (state, cProducts) {
         const newProducts = Object.assign({}, state.cProducts)
@@ -22,6 +23,9 @@ export default class {
           newProducts[pid] = cProducts[pid]
         }
         state.cProducts = newProducts
+      },
+      setViewPid (state, pid) {
+        state.viewPid = pid
       }
     }
 
@@ -31,6 +35,7 @@ export default class {
         dXdpProduct.forEach((f) => { f() })
         dXdpProduct = []
         commit('resetCProducts')
+        commit('setViewPid', 0)
       },
       setCProductsBySid ({ commit, state, rootGetters }, sid) {
         console.log('  XDC SHOP Set CPRODUCTS ' + sid)
@@ -38,11 +43,11 @@ export default class {
           return 0
         } else if (state.cShop.id !== sid) {
           return 0
-        } else if (state.cProducts.length !== 0) {
+        } /* else if (Object.keys(state.cProducts.length) !== 0) {
           // 既に設定済み場合は何もしない
           console.log('  XDC SHOP Set CPRODUCTS ARLADY NTD ' + sid)
           return 0
-        }
+        } */
         // for (const bid in state.cShop.brand) {
         this.dispatch(`${state.sPath}/setCProductsByBid`, state.cShop.brand, { root: true })
       },
@@ -73,12 +78,24 @@ export default class {
           })
         }
         this.dispatch(`${state.sPath}/setCreativesByIds`, cIds, { root: true })
+      },
+      setViewPid ({ commit, state, rootGetters }, pid) {
+        commit('setViewPid', pid)
       }
     }
     this.getters = {
       cProducts: (state, getters, rootState, rootGetters) => {
         console.log('  XDC BRAND GET cProducts ')
         return state.cProducts
+      },
+      vProduct: (state, getters, rootState, rootGetters) => {
+        console.log('  XDC BRAND GET vProduct ')
+        if (state.cProducts === {}) {
+          return null
+        } else if (state.cProducts[state.viewPid]) {
+          return state.cProducts[state.viewPid]
+        }
+        return null
       }
     }
   }

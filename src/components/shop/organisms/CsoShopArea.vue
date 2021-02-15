@@ -6,7 +6,7 @@
 <script>
 import CgmSlideshowBase from '@/components/general/molecules/CgmSlideshowBase.vue'
 export default {
-  name: 'CsmShopArea',
+  name: 'CsoShopArea',
   components: {
     CgmSlideshowBase
   },

@@ -64,6 +64,7 @@ export default {
     }
   },
   created () {
+    console.log('Panel created')
     this.$store.dispatch('xd/general/xdslideshow/addPMax')
   },
   methods: {

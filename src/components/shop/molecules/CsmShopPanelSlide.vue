@@ -55,7 +55,8 @@ export default {
 <style scoped lang="scss">
 .Slide{
   width: 100%;
-  height: 100%;
+  height: 110%;
+  margin-top:-10%;
   display: flex;
   @include mq(sp){ flex-direction: column; }
   @include mq(tb){ flex-direction: column; }
@@ -64,8 +65,9 @@ export default {
   .slElem{
     flex-grow: 1;
     .slCreative{
-      height: 100%;
+      height: 120%;
       width: 100%;
+      clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
     }
   }
 }

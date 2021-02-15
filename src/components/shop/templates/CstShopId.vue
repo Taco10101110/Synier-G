@@ -1,6 +1,6 @@
 <template>
-  <CsmShopArea :v-if="cShop!==null">
-    <CsmShopPanel
+  <CsoShopArea :v-if="cShop!==null">
+    <CsoShopPanel
       v-for="(sf, index) in cShopStoreFronts"
       :key="index"
       :pagenumber="index"
@@ -24,20 +24,32 @@
         clickfunc: () => { return null }
       }]"
     />
-  </CsmShopArea>
+    <CsoModalBase v-if="isModalOn">
+      <CsoCartView />
+      <CsoProductView />
+    </CsoModalBase>
+  </CsoShopArea>
 </template>
 <script>
-// import CgmSlideshowBase from '@/components/general/molecules/CgmSlideshowBase.vue'
 import CsmFloatButtons from '@/components/shop/molecules/CsmFloatButtons.vue'
-import CsmShopArea from '@/components/shop/molecules/CsmShopArea.vue'
-import CsmShopPanel from '@/components/shop/molecules/CsmShopPanel.vue'
+import CsoModalBase from '@/components/shop/organisms/CsoModalBase.vue'
+import CsoProductView from '@/components/shop/organisms/CsoProductView.vue'
+import CsoCartView from '@/components/shop/organisms/CsoCartView.vue'
+import CsoShopArea from '@/components/shop/organisms/CsoShopArea.vue'
+import CsoShopPanel from '@/components/shop/organisms/CsoShopPanel.vue'
+// import CsmShopArea from '@/components/shop/molecules/CsmShopArea.vue'
+// import CgmSlideshowBase from '@/components/general/molecules/CgmSlideshowBase.vue'
+// import CsmShopPanel1stView from '@/components/shop/molecules/CsmShopPanel1stView.vue'
 const { mapGetters } = require('vuex')
 export default {
   name: 'CstShopId',
   components: {
     CsmFloatButtons,
-    CsmShopArea,
-    CsmShopPanel
+    CsoShopArea,
+    CsoShopPanel,
+    CsoModalBase,
+    CsoProductView,
+    CsoCartView
   },
   props: {
     sid: {
@@ -46,17 +58,14 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('xd/shop/xdsshop', ['cShop', 'cShopStoreFronts'])
-  },
-  /*
-  watch: {
-    cShop () {
-      if (this.cShop !== null) {
-        this.$store.dispatch('xd/shop/xdsshop/setCProductsBySid', this.cShop.id)
+    ...mapGetters('xd/shop/xdsshop', ['cShop', 'cShopStoreFronts', 'vProduct']),
+    isModalOn () {
+      if (this.vProduct !== null) {
+        return true
       }
+      return false
     }
   },
-  */
   mounted () {
     console.log('Cst shop id mounted')
     this.$store.dispatch('xd/shop/xdsshop/resetCShop')

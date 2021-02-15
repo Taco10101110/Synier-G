@@ -90,7 +90,7 @@ export default {
       return ret
     },
     numProducts () {
-      // console.log('Products All num Product')
+      console.log('Products All num Product')
       if (this.cProducts === null) {
         return 0
       }
@@ -110,7 +110,8 @@ export default {
       return Math.ceil(this.numProducts / this.numProductsOnePage)
     }
   },
-  mounted () {
+  created () {
+    console.log('created products all')
     // this.$store.dispatch('xd/shop/xdsshop/setCreativesByIds', this.$props.storefront.creativeIds)
   },
   methods: {

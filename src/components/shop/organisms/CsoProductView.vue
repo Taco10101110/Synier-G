@@ -1,12 +1,13 @@
 <template>
   <div>
-    <h2>1st view</h2>
-    <p>詳細準備中</p>
+    ProductView
   </div>
 </template>
 <script>
 export default {
-  name: 'Cso1stView',
+  name: 'CsoProductView',
+  components: {
+  },
   props: {
   }
 }

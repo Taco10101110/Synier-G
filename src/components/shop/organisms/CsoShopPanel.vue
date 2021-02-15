@@ -29,7 +29,7 @@ import CsmShopPanelProductsAll from '@/components/shop/molecules/CsmShopPanelPro
 import CsmShopPanelDefault from '@/components/shop/molecules/CsmShopPanelDefault.vue'
 const cfShops = require('~/classes/cfShops.js')
 export default {
-  name: 'CsmShopPanel',
+  name: 'CsoShopPanel',
   components: {
     CsmShopPanel1stView,
     CsmShopPanelSlide,
