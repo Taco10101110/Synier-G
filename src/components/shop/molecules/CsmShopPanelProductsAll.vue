@@ -37,7 +37,7 @@
             `pa--${pIndex}`,
             nElem === (lIndex + 1) ? 'paVis' : 'paInv'
           ]"
-          :clickfunck="productClick"
+          :clickfunc="productClick"
         />
       </div>
     </CsaCreativeFill>

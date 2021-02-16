@@ -7,20 +7,30 @@
       :storefront="sf"
     />
     <CsmFloatButtons
+      v-if="!isModalOn"
       :menus="[{
         key: 'next',
         title: '進む',
         icon: ['fas', 'forward'],
+        num: 0,
         clickfunc: nextClick
+      },{
+        key: 'before',
+        title: '戻る',
+        icon: ['fas', 'backward'],
+        num: 0,
+        clickfunc: () => { console.log('back click') }
       },{
         key: 'share',
         title: 'シェア',
         icon: ['fas', 'share-alt'],
+        num: 1,
         clickfunc: () => { return null }
       },{
         key: 'cart',
         title: 'カート',
         icon: ['fas', 'shopping-cart'],
+        num: 2,
         clickfunc: () => { return null }
       }]"
     />
@@ -28,6 +38,34 @@
       <CsoCartView />
       <CsoProductView />
     </CsoModalBase>
+    <CsmFloatButtons
+      v-if="isModalOn"
+      :menus="[{
+        key: 'next',
+        title: '進む',
+        icon: ['fas', 'forward'],
+        num: 0,
+        clickfunc: nextClick
+      },{
+        key: 'before',
+        title: '戻る',
+        icon: ['fas', 'backward'],
+        num: 0,
+        clickfunc: () => { console.log('back click') }
+      },{
+        key: 'share',
+        title: 'シェア',
+        icon: ['fas', 'share-alt'],
+        num: 1,
+        clickfunc: () => { return null }
+      },{
+        key: 'cart',
+        title: 'カート',
+        icon: ['fas', 'shopping-cart'],
+        num: 2,
+        clickfunc: () => { return null }
+      }]"
+    />
   </CsoShopArea>
 </template>
 <script>

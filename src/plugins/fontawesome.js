@@ -2,10 +2,10 @@
 import Vue from 'vue'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faLocationArrow, faTable, faTshirt, faSearchDollar, faUsers, faRandom, faImages, faTags, faShoppingBag, faStore, faShareAlt, faShoppingCart, faForward } from '@fortawesome/free-solid-svg-icons'
+import { faLocationArrow, faTable, faTshirt, faSearchDollar, faUsers, faRandom, faImages, faTags, faShoppingBag, faStore, faShareAlt, faShoppingCart, faForward, faBackward } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
-library.add(faLocationArrow, faTable, faTshirt, faSearchDollar, faUsers, faRandom, faImages, faTags, faShoppingBag, faStore, faShareAlt, faShoppingCart, faForward)
+library.add(faLocationArrow, faTable, faTshirt, faSearchDollar, faUsers, faRandom, faImages, faTags, faShoppingBag, faStore, faShareAlt, faShoppingCart, faForward, faBackward)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
