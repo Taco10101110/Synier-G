@@ -60,6 +60,7 @@ export default {
   computed: {
     ...mapGetters('xd/shop/xdsshop', ['cShop', 'cShopStoreFronts', 'vProduct']),
     isModalOn () {
+      console.log('isModalOn')
       if (this.vProduct !== null) {
         return true
       }
@@ -84,6 +85,7 @@ export default {
   methods: {
     nextClick () {
       //
+      console.log('next clicke')
       this.$store.dispatch('xd/general/xdslideshow/goNextStep')
     }
   }

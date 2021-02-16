@@ -69,6 +69,7 @@ export default {
   },
   methods: {
     click () {
+      console.log('CGM SlideshowPanel click')
       this.$store.dispatch('xd/general/xdslideshow/goNextStep')
     }
   }

@@ -43,12 +43,8 @@ export default {
     }
   },
   created () {
-    // setTimeout(() => { this.$store.dispatch('xd/general/xdslideshow/goNextStep') }, 2000)
-    // console.log('CHECK TIMING created')
   },
   updated () {
-    // setTimeout(() => { this.$store.dispatch('xd/general/xdslideshow/goNextStep') }, 2000)
-    // console.log('CHECK TIMING UPDATED')
   }
 }
 </script>

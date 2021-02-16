@@ -1,5 +1,5 @@
 <template>
-  <div v-if="product !== null" class="pBox">
+  <div v-if="product !== null" class="pBox" @click.stop="onClick">
     <CgmSlideshowElem :fillmode="'backwards'" :enumber="enumber" :apdelay="apdelay+4" :apstyle="'RtoL'">
       <h3 class="pbTitle">
         {{ product.name }}
@@ -50,17 +50,30 @@ export default {
     apdelay: {
       type: Number,
       default: 0
+    },
+    clickfunc: {
+      type: Function,
+      default: (pid) => { console.log('product click ' + pid) }
     }
   },
+  data: () => ({
+    isVisible: false
+  }),
   computed: {
     ...mapGetters('xd/shop/xdsshop', ['cProducts', 'cCrePath'])
   },
+  mounted () {
+    this.isVisible = true
+  },
+  beforeDestroy () {
+    this.isVisible = false
+  },
   methods: {
-    /*
-    reqImgSrc (src) {
-      return require(src)
+    onClick () {
+      if (this.isVisible) {
+        this.$props.clickfunc(this.$props.product.id)
+      }
     }
-    */
   }
 }
 </script>

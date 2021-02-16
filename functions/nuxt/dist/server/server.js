@@ -3249,7 +3249,8 @@ let dXdpProduct = [];
 /* harmony default export */ __webpack_exports__["default"] = (class {
   constructor() {
     this.state = {
-      cProducts: []
+      cProducts: {},
+      viewPid: 0
     };
     this.mutations = {
       setCProducts(state, cProducts) {
@@ -3257,7 +3258,7 @@ let dXdpProduct = [];
       },
 
       resetCProducts(state) {
-        state.cProducts = [];
+        state.cProducts = {};
       },
 
       pushCProducts(state, cProducts) {
@@ -3268,6 +3269,10 @@ let dXdpProduct = [];
         }
 
         state.cProducts = newProducts;
+      },
+
+      setViewPid(state, pid) {
+        state.viewPid = pid;
       }
 
     };
@@ -3283,6 +3288,7 @@ let dXdpProduct = [];
         });
         dXdpProduct = [];
         commit('resetCProducts');
+        commit('setViewPid', 0);
       },
 
       setCProductsBySid({
@@ -3296,11 +3302,13 @@ let dXdpProduct = [];
           return 0;
         } else if (state.cShop.id !== sid) {
           return 0;
-        } else if (state.cProducts.length !== 0) {
-          // 既に設定済み場合は何もしない
-          console.log('  XDC SHOP Set CPRODUCTS ARLADY NTD ' + sid);
-          return 0;
-        } // for (const bid in state.cShop.brand) {
+        }
+        /* else if (Object.keys(state.cProducts.length) !== 0) {
+        // 既に設定済み場合は何もしない
+        console.log('  XDC SHOP Set CPRODUCTS ARLADY NTD ' + sid)
+        return 0
+        } */
+        // for (const bid in state.cShop.brand) {
 
 
         this.dispatch(`${state.sPath}/setCProductsByBid`, state.cShop.brand, {
@@ -3352,6 +3360,14 @@ let dXdpProduct = [];
         this.dispatch(`${state.sPath}/setCreativesByIds`, cIds, {
           root: true
         });
+      },
+
+      setViewPid({
+        commit,
+        state,
+        rootGetters
+      }, pid) {
+        commit('setViewPid', pid);
       }
 
     };
@@ -3359,6 +3375,17 @@ let dXdpProduct = [];
       cProducts: (state, getters, rootState, rootGetters) => {
         console.log('  XDC BRAND GET cProducts ');
         return state.cProducts;
+      },
+      vProduct: (state, getters, rootState, rootGetters) => {
+        console.log('  XDC BRAND GET vProduct ');
+
+        if (state.cProducts === {}) {
+          return null;
+        } else if (state.cProducts[state.viewPid]) {
+          return state.cProducts[state.viewPid];
+        }
+
+        return null;
       }
     };
   }
@@ -14468,19 +14495,19 @@ if (false) {}
 
 
 
-const _788555da = () => interopDefault(__webpack_require__.e(/* import() | pages/create/index */ 4).then(__webpack_require__.bind(null, 318)));
+const _788555da = () => interopDefault(__webpack_require__.e(/* import() | pages/create/index */ 4).then(__webpack_require__.bind(null, 321)));
 
-const _73651f93 = () => interopDefault(__webpack_require__.e(/* import() | pages/create/brand/index */ 3).then(__webpack_require__.bind(null, 319)));
+const _73651f93 = () => interopDefault(__webpack_require__.e(/* import() | pages/create/brand/index */ 3).then(__webpack_require__.bind(null, 322)));
 
-const _45d4b5a4 = () => interopDefault(__webpack_require__.e(/* import() | pages/create/shop/index */ 6).then(__webpack_require__.bind(null, 320)));
+const _45d4b5a4 = () => interopDefault(__webpack_require__.e(/* import() | pages/create/shop/index */ 6).then(__webpack_require__.bind(null, 323)));
 
-const _72682a8a = () => interopDefault(__webpack_require__.e(/* import() | pages/create/brand/_id */ 2).then(__webpack_require__.bind(null, 321)));
+const _72682a8a = () => interopDefault(__webpack_require__.e(/* import() | pages/create/brand/_id */ 2).then(__webpack_require__.bind(null, 324)));
 
-const _0d9bd10c = () => interopDefault(__webpack_require__.e(/* import() | pages/create/shop/_id */ 5).then(__webpack_require__.bind(null, 322)));
+const _0d9bd10c = () => interopDefault(__webpack_require__.e(/* import() | pages/create/shop/_id */ 5).then(__webpack_require__.bind(null, 325)));
 
-const _c3851854 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 7).then(__webpack_require__.bind(null, 323)));
+const _c3851854 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 7).then(__webpack_require__.bind(null, 326)));
 
-const _2d2273be = () => interopDefault(__webpack_require__.e(/* import() | pages/_id */ 1).then(__webpack_require__.bind(null, 324))); // TODO: remove in Nuxt 3
+const _2d2273be = () => interopDefault(__webpack_require__.e(/* import() | pages/_id */ 1).then(__webpack_require__.bind(null, 327))); // TODO: remove in Nuxt 3
 
 
 const emptyFn = () => {};

@@ -7,10 +7,10 @@
       up: () => swipe('Up'),
       down: () => swipe('Down')
     }"
-    :touchless="true"
     class="slideBase"
-    @click="click()"
+    @click.self="click()"
   >
+    <!-- :touchless="true" -->
     <slot />
   </v-window>
 </template>
@@ -39,10 +39,12 @@ export default {
       switch (direction) {
         case 'Left':
         case 'Up':
+          console.log('LeftUp')
           this.$store.dispatch('xd/general/xdslideshow/goNextStep')
           break
         case 'Right':
         case 'Down':
+          console.log('RightDown')
           this.$store.dispatch('xd/general/xdslideshow/goPrevOnce')
           break
       }

@@ -37,6 +37,7 @@
             `pa--${pIndex}`,
             nElem === (lIndex + 1) ? 'paVis' : 'paInv'
           ]"
+          :clickfunck="productClick"
         />
       </div>
     </CsaCreativeFill>
@@ -120,6 +121,10 @@ export default {
       const np1p = this.numProductsOnePage
       const cpArray = Object.keys(this.cProducts).map((pid) => { return this.cProducts[pid] })
       return cpArray.slice(lNum * np1p, lNum * np1p + np1p)
+    },
+    productClick (pid) {
+      console.log('product click ' + pid)
+      this.$store.dispatch('xd/shop/xdsshop/setViewPid', pid)
     }
   }
 }
