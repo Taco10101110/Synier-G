@@ -17,7 +17,7 @@ var VProgressLinear = __webpack_require__(208);
 var transitions = __webpack_require__(199);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
-var colorable = __webpack_require__(9);
+var colorable = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/positionable/index.js
 var positionable = __webpack_require__(36);
@@ -1029,7 +1029,7 @@ var VIcon = __webpack_require__(71);
 var VLabel = __webpack_require__(204);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
-var colorable = __webpack_require__(9);
+var colorable = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/themeable/index.js
 var themeable = __webpack_require__(8);
@@ -2524,13 +2524,13 @@ var installComponents = __webpack_require__(7);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VFileInput/VFileInput.sass
-var VFileInput = __webpack_require__(280);
+var VFileInput = __webpack_require__(281);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/index.js
 var VTextField = __webpack_require__(213);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VChip/VChip.sass
-var VChip = __webpack_require__(282);
+var VChip = __webpack_require__(283);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mixins.js
 var mixins = __webpack_require__(6);
@@ -2542,7 +2542,7 @@ var transitions = __webpack_require__(199);
 var VIcon = __webpack_require__(71);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
-var colorable = __webpack_require__(9);
+var colorable = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/groupable/index.js
 var groupable = __webpack_require__(39);
@@ -3022,7 +3022,7 @@ var VImg = __webpack_require__(47);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(278)
+  var style0 = __webpack_require__(279)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -3200,7 +3200,7 @@ installComponents_default()(component, {VFileInput: VFileInput_VFileInput,VImg: 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(277);
+var content = __webpack_require__(278);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -3217,7 +3217,7 @@ module.exports.__inject__ = function (context) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(279);
+var content = __webpack_require__(280);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -3234,7 +3234,7 @@ module.exports.__inject__ = function (context) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(287);
+var content = __webpack_require__(288);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -3245,7 +3245,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 244:
+/***/ 245:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3280,13 +3280,13 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/create/templates/CctBrandId.vue?vue&type=template&id=6710293a&scoped=true&
 
 // EXTERNAL MODULE: ./components/general/organisms/CgoUserBrandPermmit.vue + 4 modules
-var CgoUserBrandPermmit = __webpack_require__(249);
+var CgoUserBrandPermmit = __webpack_require__(250);
 
 // EXTERNAL MODULE: ./components/general/molecules/CgmFloatActMenu.vue + 6 modules
 var CgmFloatActMenu = __webpack_require__(214);
 
 // EXTERNAL MODULE: ./components/create/organisms/CcoBrandTop.vue + 4 modules
-var CcoBrandTop = __webpack_require__(250);
+var CcoBrandTop = __webpack_require__(251);
 
 // CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/@nuxt/webpack/node_modules/vue-loader/lib??vue-loader-options!./components/create/templates/CctBrandId.vue?vue&type=script&lang=js&
 //
@@ -3411,12 +3411,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var CctBrandId = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {CcoBrandTop: __webpack_require__(250).default,CcoBrandProducts: __webpack_require__(317).default,CgmFloatActMenu: __webpack_require__(214).default,CgoUserBrandPermmit: __webpack_require__(249).default})
+installComponents(component, {CcoBrandTop: __webpack_require__(251).default,CcoBrandProducts: __webpack_require__(320).default,CgmFloatActMenu: __webpack_require__(214).default,CgoUserBrandPermmit: __webpack_require__(250).default})
 
 
 /***/ }),
 
-/***/ 249:
+/***/ 250:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3490,7 +3490,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 250:
+/***/ 251:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3505,10 +3505,10 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/create/organisms/CcoBrandTop.vue?vue&type=template&id=62cb87d6&scoped=true&
 
 // EXTERNAL MODULE: ./components/create/organisms/CcoBrandsShopLink.vue + 4 modules
-var CcoBrandsShopLink = __webpack_require__(259);
+var CcoBrandsShopLink = __webpack_require__(260);
 
 // EXTERNAL MODULE: ./components/create/organisms/CcoBrandImages.vue + 4 modules
-var CcoBrandImages = __webpack_require__(260);
+var CcoBrandImages = __webpack_require__(261);
 
 // CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/@nuxt/webpack/node_modules/vue-loader/lib??vue-loader-options!./components/create/organisms/CcoBrandTop.vue?vue&type=script&lang=js&
 //
@@ -3563,12 +3563,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var CcoBrandTop = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {CcoBrandImages: __webpack_require__(260).default,CcoBrandsShopLink: __webpack_require__(259).default})
+installComponents(component, {CcoBrandImages: __webpack_require__(261).default,CcoBrandsShopLink: __webpack_require__(260).default})
 
 
 /***/ }),
 
-/***/ 259:
+/***/ 260:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3629,7 +3629,7 @@ var componentNormalizer = __webpack_require__(3);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(276)
+  var style0 = __webpack_require__(277)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -3651,7 +3651,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 260:
+/***/ 261:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3753,7 +3753,7 @@ installComponents(component, {CcmUploadCreative: __webpack_require__(223).defaul
 
 /***/ }),
 
-/***/ 261:
+/***/ 262:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3858,7 +3858,7 @@ installComponents_default()(component, {VBtn: VBtn["a" /* default */],VForm: VFo
 
 /***/ }),
 
-/***/ 262:
+/***/ 263:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3875,7 +3875,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/create/organisms/CcoProductEdit.vue?vue&type=template&id=37e0b99a&scoped=true&
 
 // EXTERNAL MODULE: ./components/general/molecules/CgmOkCancelDialog.vue + 4 modules
-var CgmOkCancelDialog = __webpack_require__(267);
+var CgmOkCancelDialog = __webpack_require__(268);
 
 // EXTERNAL MODULE: ./components/create/molecules/CcmUploadCreative.vue + 6 modules
 var CcmUploadCreative = __webpack_require__(223);
@@ -4131,7 +4131,7 @@ var installComponents_default = /*#__PURE__*/__webpack_require__.n(installCompon
 var VBtn = __webpack_require__(75);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(320);
+var VCard = __webpack_require__(323);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDialog/VDialog.js + 6 modules
 var VDialog = __webpack_require__(68);
@@ -4148,7 +4148,7 @@ var VTextField = __webpack_require__(216);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(286)
+  var style0 = __webpack_require__(287)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -4169,7 +4169,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var CcoProductEdit = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents_default()(component, {CcmUploadCreative: __webpack_require__(223).default,CgmOkCancelDialog: __webpack_require__(267).default})
+installComponents_default()(component, {CcmUploadCreative: __webpack_require__(223).default,CgmOkCancelDialog: __webpack_require__(268).default})
 
 
 /* vuetify-loader */
@@ -4184,7 +4184,7 @@ installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCa
 
 /***/ }),
 
-/***/ 267:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4275,7 +4275,7 @@ var installComponents_default = /*#__PURE__*/__webpack_require__.n(installCompon
 var VBtn = __webpack_require__(75);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(320);
+var VCard = __webpack_require__(323);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDialog/VDialog.js + 6 modules
 var VDialog = __webpack_require__(68);
@@ -4314,7 +4314,7 @@ installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCa
 
 /***/ }),
 
-/***/ 276:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4326,7 +4326,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 277:
+/***/ 278:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4340,7 +4340,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 278:
+/***/ 279:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4352,7 +4352,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 279:
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4366,20 +4366,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 280:
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(281);
+var content = __webpack_require__(282);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("320fe9da", content, true)
 
 /***/ }),
 
-/***/ 281:
+/***/ 282:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4393,20 +4393,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 282:
+/***/ 283:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(283);
+var content = __webpack_require__(284);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("49c498c3", content, true)
 
 /***/ }),
 
-/***/ 283:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4420,20 +4420,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 284:
+/***/ 285:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(285);
+var content = __webpack_require__(286);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("81b1dc02", content, true)
 
 /***/ }),
 
-/***/ 285:
+/***/ 286:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4447,7 +4447,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 286:
+/***/ 287:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4459,7 +4459,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 287:
+/***/ 288:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4473,7 +4473,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 317:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4488,10 +4488,10 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/create/organisms/CcoBrandProducts.vue?vue&type=template&id=865a52e4&scoped=true&
 
 // EXTERNAL MODULE: ./components/create/organisms/CcoProductCreate.vue + 4 modules
-var CcoProductCreate = __webpack_require__(261);
+var CcoProductCreate = __webpack_require__(262);
 
 // EXTERNAL MODULE: ./components/create/organisms/CcoProductEdit.vue + 4 modules
-var CcoProductEdit = __webpack_require__(262);
+var CcoProductEdit = __webpack_require__(263);
 
 // CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/@nuxt/webpack/node_modules/vue-loader/lib??vue-loader-options!./components/create/organisms/CcoBrandProducts.vue?vue&type=script&lang=js&
 //
@@ -4594,16 +4594,16 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var CcoBrandProducts = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {CcoProductCreate: __webpack_require__(261).default,CcoProductEdit: __webpack_require__(262).default})
+installComponents(component, {CcoProductCreate: __webpack_require__(262).default,CcoProductEdit: __webpack_require__(263).default})
 
 
 /***/ }),
 
-/***/ 320:
+/***/ 323:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _src_components_VCard_VCard_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(284);
+/* harmony import */ var _src_components_VCard_VCard_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(285);
 /* harmony import */ var _src_components_VCard_VCard_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VCard_VCard_sass__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _VSheet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25);
 /* harmony import */ var _mixins_loadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(198);
@@ -4691,7 +4691,7 @@ installComponents(component, {CcoProductCreate: __webpack_require__(261).default
 
 /***/ }),
 
-/***/ 324:
+/***/ 327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4706,7 +4706,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/create/brand/_id.vue?vue&type=template&id=27a861f8&
 
 // EXTERNAL MODULE: ./components/create/templates/CctBrandId.vue + 4 modules
-var CctBrandId = __webpack_require__(244);
+var CctBrandId = __webpack_require__(245);
 
 // CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/@nuxt/webpack/node_modules/vue-loader/lib??vue-loader-options!./pages/create/brand/_id.vue?vue&type=script&lang=js&
 //
@@ -4751,7 +4751,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var _id = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {CctBrandId: __webpack_require__(244).default})
+installComponents(component, {CctBrandId: __webpack_require__(245).default})
 
 
 /***/ })

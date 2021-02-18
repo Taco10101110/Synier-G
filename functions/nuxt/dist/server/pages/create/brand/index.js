@@ -17,7 +17,7 @@ var VProgressLinear = __webpack_require__(208);
 var transitions = __webpack_require__(199);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
-var colorable = __webpack_require__(9);
+var colorable = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/positionable/index.js
 var positionable = __webpack_require__(36);
@@ -727,7 +727,7 @@ var VIcon = __webpack_require__(71);
 var VLabel = __webpack_require__(204);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
-var colorable = __webpack_require__(9);
+var colorable = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/themeable/index.js
 var themeable = __webpack_require__(8);
@@ -2184,7 +2184,7 @@ const dirtyTypes = ['color', 'file', 'time', 'date', 'datetime-local', 'week', '
 
 /***/ }),
 
-/***/ 242:
+/***/ 243:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2199,7 +2199,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/create/templates/CctBrandIndex.vue?vue&type=template&id=24bd199e&scoped=true&
 
 // EXTERNAL MODULE: ./components/create/organisms/CcoBrandCreate.vue + 4 modules
-var CcoBrandCreate = __webpack_require__(247);
+var CcoBrandCreate = __webpack_require__(248);
 
 // CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/@nuxt/webpack/node_modules/vue-loader/lib??vue-loader-options!./components/create/templates/CctBrandIndex.vue?vue&type=script&lang=js&
 //
@@ -2242,12 +2242,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var CctBrandIndex = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {CcoBrandCreate: __webpack_require__(247).default})
+installComponents(component, {CcoBrandCreate: __webpack_require__(248).default})
 
 
 /***/ }),
 
-/***/ 247:
+/***/ 248:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2441,7 +2441,7 @@ installComponents_default()(component, {VBtn: VBtn["a" /* default */],VForm: VFo
 
 /***/ }),
 
-/***/ 322:
+/***/ 325:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2456,7 +2456,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/create/brand/index.vue?vue&type=template&id=053a996a&
 
 // EXTERNAL MODULE: ./components/create/templates/CctBrandIndex.vue + 4 modules
-var CctBrandIndex = __webpack_require__(242);
+var CctBrandIndex = __webpack_require__(243);
 
 // CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/@nuxt/webpack/node_modules/vue-loader/lib??vue-loader-options!./pages/create/brand/index.vue?vue&type=script&lang=js&
 //
@@ -2499,7 +2499,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var brand = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {CctBrandIndex: __webpack_require__(242).default})
+installComponents(component, {CctBrandIndex: __webpack_require__(243).default})
 
 
 /***/ })

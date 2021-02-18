@@ -70,6 +70,7 @@ export default {
   .hbTitle{
     max-width: 30%;
     max-height: 100%;
+    filter: drop-shadow(0px 0px 2px white);
   }
 }
 </style>

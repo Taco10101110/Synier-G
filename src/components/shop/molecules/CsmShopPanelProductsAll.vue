@@ -139,7 +139,7 @@ export default {
     left: 0;
     bottom: 0;
     right: 0;
-    padding: 60px 1rem 1rem 1rem;
+    padding: $hListmenu 1rem 1rem 1rem;
     .paTitle{
       margin: 0.5rem 0;
       mix-blend-mode: hard-light;

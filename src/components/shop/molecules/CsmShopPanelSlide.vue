@@ -51,9 +51,10 @@ export default {
 <style scoped lang="scss">
 .Slide{
   width: 100%;
-  height: 110%;
-  margin-top:-10%;
+  height: 115%;
+  margin-top:-15%;
   display: flex;
+  @include mq(xs){ flex-direction: column; }
   @include mq(sp){ flex-direction: column; }
   @include mq(tb){ flex-direction: column; }
   @include mq(pc){ flex-direction: row; }

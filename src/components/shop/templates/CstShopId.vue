@@ -6,63 +6,52 @@
       :pagenumber="index"
       :storefront="sf"
     />
-    <CsmFloatButtons
-      v-if="!isModalOn"
-      :menus="[{
-        key: 'next',
-        title: '進む',
-        icon: ['fas', 'forward'],
-        num: 0,
-        clickfunc: nextClick
-      },{
-        key: 'before',
-        title: '戻る',
-        icon: ['fas', 'backward'],
-        num: 0,
-        clickfunc: () => { console.log('back click') }
-      },{
-        key: 'share',
-        title: 'シェア',
-        icon: ['fas', 'share-alt'],
-        num: 1,
-        clickfunc: () => { return null }
-      },{
-        key: 'cart',
-        title: 'カート',
-        icon: ['fas', 'shopping-cart'],
-        num: 2,
-        clickfunc: () => { return null }
-      }]"
-    />
-    <CsoModalBase v-if="isModalOn">
-      <CsoCartView />
-      <CsoProductView />
+    <CsoModalBase :modalon="isModalOn">
+      <CsoCartView v-if="isCartView" />
+      <CsoProductView v-if="isProductView" :product="vProduct" />
     </CsoModalBase>
     <CsmFloatButtons
-      v-if="isModalOn"
       :menus="[{
         key: 'next',
         title: '進む',
         icon: ['fas', 'forward'],
         num: 0,
+        vis: !isModalOn,
         clickfunc: nextClick
       },{
         key: 'before',
         title: '戻る',
         icon: ['fas', 'backward'],
         num: 0,
-        clickfunc: () => { console.log('back click') }
+        vis: !isModalOn,
+        clickfunc: backClick
+      },{
+        key: 'buy',
+        title: '買う',
+        icon: ['fas', 'cart-arrow-down'],
+        num: 0,
+        vis: isModalOn,
+        clickfunc: nextClick
+      },{
+        key: 'close',
+        title: '閉じる',
+        icon: ['fas', 'times'],
+        num: 0,
+        vis: isModalOn,
+        clickfunc: closeClick
       },{
         key: 'share',
         title: 'シェア',
         icon: ['fas', 'share-alt'],
         num: 1,
+        vis: true,
         clickfunc: () => { return null }
       },{
         key: 'cart',
         title: 'カート',
         icon: ['fas', 'shopping-cart'],
         num: 2,
+        vis: true,
         clickfunc: () => { return null }
       }]"
     />
@@ -98,10 +87,15 @@ export default {
   computed: {
     ...mapGetters('xd/shop/xdsshop', ['cShop', 'cShopStoreFronts', 'vProduct']),
     isModalOn () {
-      console.log('isModalOn')
+      return this.isCartView || this.isProductView
+    },
+    isProductView () {
       if (this.vProduct !== null) {
         return true
       }
+      return false
+    },
+    isCartView () {
       return false
     }
   },
@@ -122,9 +116,16 @@ export default {
   },
   methods: {
     nextClick () {
-      //
-      console.log('next clicke')
+      console.log('next click')
       this.$store.dispatch('xd/general/xdslideshow/goNextStep')
+    },
+    backClick () {
+      console.log('back click')
+      this.$store.dispatch('xd/general/xdslideshow/goPrevStep')
+    },
+    closeClick () {
+      console.log('close click')
+      this.$store.dispatch('xd/shop/xdsshop/setViewPid', 0)
     }
   }
 }

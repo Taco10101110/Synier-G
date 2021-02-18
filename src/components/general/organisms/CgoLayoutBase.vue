@@ -27,7 +27,6 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-$b-height: 60px;
 .layoutbase{
   position: fixed;
   bottom: 0;
@@ -41,7 +40,7 @@ $b-height: 60px;
     left: 0;
     right: 0;
     z-index: 1;
-    height: $b-height;
+    height: $hListmenu;
   }
   #Content{
     position: absolute;
@@ -59,7 +58,7 @@ $b-height: 60px;
     }
     #Footer{
       flex-grow: 0;
-      height: $b-height;
+      height: $hListmenu;
     }
   }
 }

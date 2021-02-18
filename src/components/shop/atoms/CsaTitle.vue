@@ -34,7 +34,11 @@ export default {
 <style scoped lang="scss">
 .csaTitle {
   --fsize: 3.2rem;
-  font-size: var(--fsize);
+  --fbase: 1;
+  @include mq(xs){
+    --fbase: 0.6;
+  }
+  font-size: calc(var(--fbase) * var(--fsize));
   word-break: keep-all;
   font-family: "M PLUS 1p";
   font-weight: 100;

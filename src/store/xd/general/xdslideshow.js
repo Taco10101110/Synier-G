@@ -65,7 +65,7 @@ export const actions = {
   goPrevStep ({ commit, state, rootGetters }) {
     // console.log('  XD NSLID goPrevStep ')
     const nextEle = state.nElem - 1
-    if (nextEle < 0) {
+    if (nextEle <= 0) {
       const nextPnl = state.nPanel - 1
       if (nextPnl >= 0) {
         commit('resetNebMax')

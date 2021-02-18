@@ -16,7 +16,6 @@
       >
         <font-awesome-icon
           class="fbsIcon"
-          :style="{fontSize: '1.6rem'}"
           :icon="menu.icon"
         />
       </div>
@@ -34,6 +33,7 @@ export default {
         title: '基本',
         icon: '',
         num: 0,
+        vis: true,
         clickfunc: () => { return null }
       }]
     }
@@ -42,10 +42,12 @@ export default {
     fbArys () {
       const ret = []
       this.$props.menus.forEach((m) => {
-        while (ret.length <= m.num) {
-          ret.push([])
+        if (m.vis === true) {
+          while (ret.length <= m.num) {
+            ret.push([])
+          }
+          ret[m.num].push(m)
         }
-        ret[m.num].push(m)
       })
       return ret
     }
@@ -69,11 +71,11 @@ export default {
     .fbsButton{
       margin-top: 0.5rem;
       margin-left: 0.5rem;
-      box-shadow: 2px 2px 0px 0px  rgba(0, 0, 0, 0.3);
       font-size: 1.6rem;
-      border-radius: 50%;
       width: 3rem;
       height: 3rem;
+      box-shadow: 2px 2px 0px 0px  rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -86,12 +88,32 @@ export default {
       }
     }
     &:first-child .fbsButton:first-child{
-      // width: 3.6rem;
-      // height: 3.6rem;
+      width: 5rem;
+      height: 5rem;
       .fbsIcon{
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         --shadow-color: rgba(255, 145, 0, 1);
       }
+    }
+    @include mq(xs){
+      .fbsButton{
+        margin-top: 0.3rem;
+        margin-left: 0.3rem;
+        font-size: 1.2rem;
+        width: 2rem;
+        height: 2rem;
+        .fbsIcon{
+          font-size: 1.2rem;
+        }
+      }
+      &:first-child .fbsButton:first-child{
+        width: 3rem;
+        height: 3rem;
+        .fbsIcon{
+          font-size: 1.8rem;
+        }
+      }
+
     }
     .fbsButton.fbsBtn--grass{
       background-color: #00000040;

@@ -54,6 +54,7 @@ export default {
     p{
       font-size: 0.8rem;
       margin: 0 0.3rem;
+      color: white;
       text-shadow: 0 0 1px white;
       letter-spacing: 0.05rem;
     }

@@ -1,23 +1,18 @@
 <template>
   <div v-if="product !== null" class="pBox" @click.stop="onClick">
-    <CgmSlideshowElem :fillmode="'backwards'" :enumber="enumber" :apdelay="apdelay+4" :apstyle="'RtoL'">
+    <CgmSlideshowElem :fillmode="'backwards'" :enumber="enumber" :apdelay="apdelay+2" :apstyle="'RtoL'">
       <h3 class="pbTitle">
         {{ product.name }}
       </h3>
     </CgmSlideshowElem>
     <CgmSlideshowElem :fillmode="'backwards'" :enumber="enumber" :apdelay="apdelay" :apstyle="'JustFade'">
-      <!--
-      <CgmCreativeBox
-        :src="cCrePath(product.topimage)"
-      />
-      -->
       <v-img
         :src="cCrePath(product.topimage)"
         aspect-ratio="1"
         class="pbImage"
       />
     </CgmSlideshowElem>
-    <CgmSlideshowElem :fillmode="'backwards'" :enumber="enumber" :apdelay="apdelay+2" :apstyle="'RtoL'">
+    <CgmSlideshowElem :fillmode="'backwards'" :enumber="enumber" :apdelay="apdelay+1" :apstyle="'RtoL'">
       <CgaPrice :price="product.price" class="pbPrice" />
     </CgmSlideshowElem>
   </div>
@@ -108,7 +103,7 @@ export default {
     line-height: 1.1rem;
   }
   .pbImage{
-    filter: chroma(#fff);
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.4));
   }
   .pbPrice{
     display: block;

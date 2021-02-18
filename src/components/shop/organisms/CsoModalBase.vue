@@ -1,8 +1,9 @@
 <template>
-  <div class="modalBase">
-    CsoModalBase
-    <slot />
-  </div>
+  <transition appear>
+    <div v-if="modalon" class="modalBase">
+      <slot />
+    </div>
+  </transition>
 </template>
 <script>
 export default {
@@ -10,6 +11,10 @@ export default {
   components: {
   },
   props: {
+    modalon: {
+      type: Boolean,
+      default: false
+    }
   }
 }
 </script>
@@ -20,6 +25,16 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
+  padding: $hListmenu 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  color: white;
+}
+.v-enter-active, .v-leave-active {
+  transition: opacity .5s
+}
+
+.v-enter, .v-leave-to {
+  opacity: 0
 }
 </style>

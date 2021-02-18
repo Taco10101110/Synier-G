@@ -131,24 +131,6 @@
   "LazyCctShopIndex": {
     "description": "Auto imported from components/create/templates/CctShopIndex.vue"
   },
-  "CgaFooterBtn": {
-    "description": "Auto imported from components/general/atoms/CgaFooterBtn.vue"
-  },
-  "LazyCgaFooterBtn": {
-    "description": "Auto imported from components/general/atoms/CgaFooterBtn.vue"
-  },
-  "CgaFooterSheet": {
-    "description": "Auto imported from components/general/atoms/CgaFooterSheet.vue"
-  },
-  "LazyCgaFooterSheet": {
-    "description": "Auto imported from components/general/atoms/CgaFooterSheet.vue"
-  },
-  "CgaPrice": {
-    "description": "Auto imported from components/general/atoms/CgaPrice.vue"
-  },
-  "LazyCgaPrice": {
-    "description": "Auto imported from components/general/atoms/CgaPrice.vue"
-  },
   "CgmCreativeBox": {
     "description": "Auto imported from components/general/molecules/CgmCreativeBox.vue"
   },
@@ -208,6 +190,24 @@
   },
   "LazyCgmSlideshowPanel": {
     "description": "Auto imported from components/general/molecules/CgmSlideshowPanel.vue"
+  },
+  "CgaFooterBtn": {
+    "description": "Auto imported from components/general/atoms/CgaFooterBtn.vue"
+  },
+  "LazyCgaFooterBtn": {
+    "description": "Auto imported from components/general/atoms/CgaFooterBtn.vue"
+  },
+  "CgaFooterSheet": {
+    "description": "Auto imported from components/general/atoms/CgaFooterSheet.vue"
+  },
+  "LazyCgaFooterSheet": {
+    "description": "Auto imported from components/general/atoms/CgaFooterSheet.vue"
+  },
+  "CgaPrice": {
+    "description": "Auto imported from components/general/atoms/CgaPrice.vue"
+  },
+  "LazyCgaPrice": {
+    "description": "Auto imported from components/general/atoms/CgaPrice.vue"
   },
   "CsmFloatButtons": {
     "description": "Auto imported from components/shop/molecules/CsmFloatButtons.vue"

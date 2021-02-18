@@ -20,9 +20,6 @@ export { default as CctBrandId } from '../..\\components\\create\\templates\\Cct
 export { default as CctBrandIndex } from '../..\\components\\create\\templates\\CctBrandIndex.vue'
 export { default as CctShopId } from '../..\\components\\create\\templates\\CctShopId.vue'
 export { default as CctShopIndex } from '../..\\components\\create\\templates\\CctShopIndex.vue'
-export { default as CgaFooterBtn } from '../..\\components\\general\\atoms\\CgaFooterBtn.vue'
-export { default as CgaFooterSheet } from '../..\\components\\general\\atoms\\CgaFooterSheet.vue'
-export { default as CgaPrice } from '../..\\components\\general\\atoms\\CgaPrice.vue'
 export { default as CgmCreativeBox } from '../..\\components\\general\\molecules\\CgmCreativeBox.vue'
 export { default as CgmFloatActMenu } from '../..\\components\\general\\molecules\\CgmFloatActMenu.vue'
 export { default as CgmFooterBase } from '../..\\components\\general\\molecules\\CgmFooterBase.vue'
@@ -33,6 +30,9 @@ export { default as CgmOkCancelDialog } from '../..\\components\\general\\molecu
 export { default as CgmSlideshowBase } from '../..\\components\\general\\molecules\\CgmSlideshowBase.vue'
 export { default as CgmSlideshowElem } from '../..\\components\\general\\molecules\\CgmSlideshowElem.vue'
 export { default as CgmSlideshowPanel } from '../..\\components\\general\\molecules\\CgmSlideshowPanel.vue'
+export { default as CgaFooterBtn } from '../..\\components\\general\\atoms\\CgaFooterBtn.vue'
+export { default as CgaFooterSheet } from '../..\\components\\general\\atoms\\CgaFooterSheet.vue'
+export { default as CgaPrice } from '../..\\components\\general\\atoms\\CgaPrice.vue'
 export { default as CsmFloatButtons } from '../..\\components\\shop\\molecules\\CsmFloatButtons.vue'
 export { default as CsmShopPanelDefault } from '../..\\components\\shop\\molecules\\CsmShopPanelDefault.vue'
 export { default as CsmShopPanelProductsAll } from '../..\\components\\shop\\molecules\\CsmShopPanelProductsAll.vue'
@@ -79,9 +79,6 @@ export const LazyCctBrandId = import('../..\\components\\create\\templates\\CctB
 export const LazyCctBrandIndex = import('../..\\components\\create\\templates\\CctBrandIndex.vue' /* webpackChunkName: "components_create/templates/CctBrandIndex" */).then(c => c.default || c)
 export const LazyCctShopId = import('../..\\components\\create\\templates\\CctShopId.vue' /* webpackChunkName: "components_create/templates/CctShopId" */).then(c => c.default || c)
 export const LazyCctShopIndex = import('../..\\components\\create\\templates\\CctShopIndex.vue' /* webpackChunkName: "components_create/templates/CctShopIndex" */).then(c => c.default || c)
-export const LazyCgaFooterBtn = import('../..\\components\\general\\atoms\\CgaFooterBtn.vue' /* webpackChunkName: "components_general/atoms/CgaFooterBtn" */).then(c => c.default || c)
-export const LazyCgaFooterSheet = import('../..\\components\\general\\atoms\\CgaFooterSheet.vue' /* webpackChunkName: "components_general/atoms/CgaFooterSheet" */).then(c => c.default || c)
-export const LazyCgaPrice = import('../..\\components\\general\\atoms\\CgaPrice.vue' /* webpackChunkName: "components_general/atoms/CgaPrice" */).then(c => c.default || c)
 export const LazyCgmCreativeBox = import('../..\\components\\general\\molecules\\CgmCreativeBox.vue' /* webpackChunkName: "components_general/molecules/CgmCreativeBox" */).then(c => c.default || c)
 export const LazyCgmFloatActMenu = import('../..\\components\\general\\molecules\\CgmFloatActMenu.vue' /* webpackChunkName: "components_general/molecules/CgmFloatActMenu" */).then(c => c.default || c)
 export const LazyCgmFooterBase = import('../..\\components\\general\\molecules\\CgmFooterBase.vue' /* webpackChunkName: "components_general/molecules/CgmFooterBase" */).then(c => c.default || c)
@@ -92,6 +89,9 @@ export const LazyCgmOkCancelDialog = import('../..\\components\\general\\molecul
 export const LazyCgmSlideshowBase = import('../..\\components\\general\\molecules\\CgmSlideshowBase.vue' /* webpackChunkName: "components_general/molecules/CgmSlideshowBase" */).then(c => c.default || c)
 export const LazyCgmSlideshowElem = import('../..\\components\\general\\molecules\\CgmSlideshowElem.vue' /* webpackChunkName: "components_general/molecules/CgmSlideshowElem" */).then(c => c.default || c)
 export const LazyCgmSlideshowPanel = import('../..\\components\\general\\molecules\\CgmSlideshowPanel.vue' /* webpackChunkName: "components_general/molecules/CgmSlideshowPanel" */).then(c => c.default || c)
+export const LazyCgaFooterBtn = import('../..\\components\\general\\atoms\\CgaFooterBtn.vue' /* webpackChunkName: "components_general/atoms/CgaFooterBtn" */).then(c => c.default || c)
+export const LazyCgaFooterSheet = import('../..\\components\\general\\atoms\\CgaFooterSheet.vue' /* webpackChunkName: "components_general/atoms/CgaFooterSheet" */).then(c => c.default || c)
+export const LazyCgaPrice = import('../..\\components\\general\\atoms\\CgaPrice.vue' /* webpackChunkName: "components_general/atoms/CgaPrice" */).then(c => c.default || c)
 export const LazyCsmFloatButtons = import('../..\\components\\shop\\molecules\\CsmFloatButtons.vue' /* webpackChunkName: "components_shop/molecules/CsmFloatButtons" */).then(c => c.default || c)
 export const LazyCsmShopPanelDefault = import('../..\\components\\shop\\molecules\\CsmShopPanelDefault.vue' /* webpackChunkName: "components_shop/molecules/CsmShopPanelDefault" */).then(c => c.default || c)
 export const LazyCsmShopPanelProductsAll = import('../..\\components\\shop\\molecules\\CsmShopPanelProductsAll.vue' /* webpackChunkName: "components_shop/molecules/CsmShopPanelProductsAll" */).then(c => c.default || c)
