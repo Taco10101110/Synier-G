@@ -8,7 +8,7 @@
       <div
         v-for="menu in menuArray"
         :key="menu.key"
-        class="fbsButton fbsBtn--grass"
+        :class="['fbsButton', 'fbsBtn--grass', {'fbsBtn---sizeL': menu.size==='L'} ]"
         fab
         dark
         middium
@@ -33,6 +33,7 @@ export default {
         title: '基本',
         icon: '',
         num: 0,
+        size: 'S',
         vis: true,
         clickfunc: () => { return null }
       }]
@@ -70,7 +71,7 @@ export default {
     align-items: flex-end;
     .fbsButton{
       margin-top: 0.5rem;
-      margin-left: 0.5rem;
+      margin-left: 1rem;
       font-size: 1.6rem;
       width: 3rem;
       height: 3rem;
@@ -87,7 +88,7 @@ export default {
         color: var(--shadow-color);
       }
     }
-    &:first-child .fbsButton:first-child{
+    .fbsButton.fbsBtn---sizeL{
       width: 5rem;
       height: 5rem;
       .fbsIcon{
@@ -106,7 +107,7 @@ export default {
           font-size: 1.2rem;
         }
       }
-      &:first-child .fbsButton:first-child{
+      .fbsButton.fbsBtn---sizeL{
         width: 3rem;
         height: 3rem;
         .fbsIcon{

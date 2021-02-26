@@ -209,36 +209,6 @@
   "LazyCgaPrice": {
     "description": "Auto imported from components/general/atoms/CgaPrice.vue"
   },
-  "CsmFloatButtons": {
-    "description": "Auto imported from components/shop/molecules/CsmFloatButtons.vue"
-  },
-  "LazyCsmFloatButtons": {
-    "description": "Auto imported from components/shop/molecules/CsmFloatButtons.vue"
-  },
-  "CsmShopPanelDefault": {
-    "description": "Auto imported from components/shop/molecules/CsmShopPanelDefault.vue"
-  },
-  "LazyCsmShopPanelDefault": {
-    "description": "Auto imported from components/shop/molecules/CsmShopPanelDefault.vue"
-  },
-  "CsmShopPanelProductsAll": {
-    "description": "Auto imported from components/shop/molecules/CsmShopPanelProductsAll.vue"
-  },
-  "LazyCsmShopPanelProductsAll": {
-    "description": "Auto imported from components/shop/molecules/CsmShopPanelProductsAll.vue"
-  },
-  "CsmShopPanelSlide": {
-    "description": "Auto imported from components/shop/molecules/CsmShopPanelSlide.vue"
-  },
-  "LazyCsmShopPanelSlide": {
-    "description": "Auto imported from components/shop/molecules/CsmShopPanelSlide.vue"
-  },
-  "CsmShopPanel1stView": {
-    "description": "Auto imported from components/shop/molecules/CsmShopPanel1stView.vue"
-  },
-  "LazyCsmShopPanel1stView": {
-    "description": "Auto imported from components/shop/molecules/CsmShopPanel1stView.vue"
-  },
   "CsaBoard": {
     "description": "Auto imported from components/shop/atoms/CsaBoard.vue"
   },
@@ -268,6 +238,36 @@
   },
   "LazyCsaTitle": {
     "description": "Auto imported from components/shop/atoms/CsaTitle.vue"
+  },
+  "CsmFloatButtons": {
+    "description": "Auto imported from components/shop/molecules/CsmFloatButtons.vue"
+  },
+  "LazyCsmFloatButtons": {
+    "description": "Auto imported from components/shop/molecules/CsmFloatButtons.vue"
+  },
+  "CsmShopPanelDefault": {
+    "description": "Auto imported from components/shop/molecules/CsmShopPanelDefault.vue"
+  },
+  "LazyCsmShopPanelDefault": {
+    "description": "Auto imported from components/shop/molecules/CsmShopPanelDefault.vue"
+  },
+  "CsmShopPanelProductsAll": {
+    "description": "Auto imported from components/shop/molecules/CsmShopPanelProductsAll.vue"
+  },
+  "LazyCsmShopPanelProductsAll": {
+    "description": "Auto imported from components/shop/molecules/CsmShopPanelProductsAll.vue"
+  },
+  "CsmShopPanelSlide": {
+    "description": "Auto imported from components/shop/molecules/CsmShopPanelSlide.vue"
+  },
+  "LazyCsmShopPanelSlide": {
+    "description": "Auto imported from components/shop/molecules/CsmShopPanelSlide.vue"
+  },
+  "CsmShopPanel1stView": {
+    "description": "Auto imported from components/shop/molecules/CsmShopPanel1stView.vue"
+  },
+  "LazyCsmShopPanel1stView": {
+    "description": "Auto imported from components/shop/molecules/CsmShopPanel1stView.vue"
   },
   "CgoLayoutBase": {
     "description": "Auto imported from components/general/organisms/CgoLayoutBase.vue"

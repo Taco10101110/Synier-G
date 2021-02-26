@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "hashirama"
+    "default": "hashirama",
+    "sg": "synerg-bd0bf"
   }
 }

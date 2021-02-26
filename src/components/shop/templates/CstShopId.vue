@@ -12,10 +12,27 @@
     </CsoModalBase>
     <CsmFloatButtons
       :menus="[{
+        key: 'cart',
+        title: 'カート',
+        icon: ['fas', 'shopping-cart'],
+        num: 0,
+        size: 'S',
+        vis: true,
+        clickfunc: () => { return null }
+      },{
+        key: 'share',
+        title: 'シェア',
+        icon: ['fas', 'share-alt'],
+        num: 0,
+        size: 'S',
+        vis: true,
+        clickfunc: () => { return null }
+      },{
         key: 'next',
         title: '進む',
         icon: ['fas', 'forward'],
         num: 0,
+        size: 'L',
         vis: !isModalOn,
         clickfunc: nextClick
       },{
@@ -23,6 +40,7 @@
         title: '戻る',
         icon: ['fas', 'backward'],
         num: 0,
+        size: 'S',
         vis: !isModalOn,
         clickfunc: backClick
       },{
@@ -30,6 +48,7 @@
         title: '買う',
         icon: ['fas', 'cart-arrow-down'],
         num: 0,
+        size: 'L',
         vis: isModalOn,
         clickfunc: nextClick
       },{
@@ -37,22 +56,9 @@
         title: '閉じる',
         icon: ['fas', 'times'],
         num: 0,
+        size: 'S',
         vis: isModalOn,
         clickfunc: closeClick
-      },{
-        key: 'share',
-        title: 'シェア',
-        icon: ['fas', 'share-alt'],
-        num: 1,
-        vis: true,
-        clickfunc: () => { return null }
-      },{
-        key: 'cart',
-        title: 'カート',
-        icon: ['fas', 'shopping-cart'],
-        num: 2,
-        vis: true,
-        clickfunc: () => { return null }
       }]"
     />
   </CsoShopArea>

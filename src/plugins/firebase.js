@@ -4,13 +4,13 @@ import 'firebase/storage'
 let initFlag = false
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: 'AIzaSyA6dtql2UHUPAyyOxiE8tsoSlMzP55b604',
-    authDomain: 'hashirama.firebaseapp.com',
-    databaseURL: 'https://hashirama.firebaseio.com',
-    projectId: 'hashirama',
-    storageBucket: 'hashirama.appspot.com',
-    messagingSenderId: '661599657184',
-    appId: '1:661599657184:web:f797ca6c451c54069d0485'
+    apiKey: "AIzaSyCcuP8oRU2xg2uiUdmjwVl4G-ymGmMPQ1Q",
+    authDomain: "synerg-bd0bf.firebaseapp.com",
+    projectId: "synerg-bd0bf",
+    storageBucket: "synerg-bd0bf.appspot.com",
+    messagingSenderId: "1059739406351",
+    appId: "1:1059739406351:web:6956cd5f70b091200ed37a",
+    measurementId: "G-HVRSP6C8LJ"
   })
   console.log('Init Firebase')
   initFlag = true

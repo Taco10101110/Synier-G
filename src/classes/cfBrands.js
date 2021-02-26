@@ -80,6 +80,10 @@ class CProduct {
     this.purchase = {}
     // クリエイティブ 連想配列
     this.creativeIds = []
+    // 色
+    this.color = {}
+    // メッセージ
+    this.message = ''
   }
 
   cIds () {
@@ -143,7 +147,9 @@ const ConvCProduct = {
       brand: product.brand,
       attention: product.attention,
       purchase: product.purchase,
-      creativeIds: product.creativeIds.slice()
+      creativeIds: product.creativeIds.slice(),
+      color: product.color,
+      message: product.message
     }
   },
   fromFirestore (snapshot, options) {
@@ -164,6 +170,8 @@ const ConvCProduct = {
     product.attention = Object.assign({}, data.attention)
     product.purchase = Object.assign({}, data.purchase)
     product.creativeIds = data.creativeIds.slice()
+    product.color = Object.assign({}, data.color)
+    product.message = data.message
     return product
   }
 }
